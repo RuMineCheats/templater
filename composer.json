@@ -1,0 +1,20 @@
+{
+    "name": "rmcj/templater",
+    "description": "rmcj template master",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Evgeniy Goryunov",
+            "email": "evg11121@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+	"minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "rmcj\\simply_templater\\": "src/"
+        }
+    }
+}
