@@ -1,5 +1,8 @@
 <?php
 namespace rmcj\simply_templater;
+
+use rmcj\simply_templater\Exceptions\TemplateNotExistsException;
+
 class Templater {
 
     private $templates_dir; // Директория с tpl-файлами
@@ -27,6 +30,9 @@ class Templater {
     /* Вывод tpl-файла, в который подставляются все данные для вывода */
     public function display($template) {
         $template = $this->templates_dir.$template.".tpl";
+        if(!file_exists($template)){
+            throw new TemplateNotExistsException();
+        }
         ob_start();
         include ($template);
         echo ob_get_clean();
