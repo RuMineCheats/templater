@@ -2,6 +2,7 @@
     "name": "rmcj/templater",
     "description": "rmcj template master",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Evgeniy Goryunov",
@@ -16,8 +17,5 @@
         "psr-4": {
             "rmcj\\simply_templater\\": "src/"
         }
-    },
-   {
-    "license": "MIT"
-}
+    }
 }
